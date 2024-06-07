@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
       <Login open={open} onClose={()=>setOpen(false)}>
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl">Login</h1>
-          <input type="text" className="h-12 w-full border-sky-200 border-2 rounded-lg p-2" placeholder="Your email"></input>
+          <input type="email" className="h-12 w-full border-sky-200 border-2 rounded-lg p-2" placeholder="Your email"></input>
           <input type="password" className="h-12 w-full border-sky-200 border-2 rounded-lg p-2" placeholder="Password"></input>
           <button className=" w-full rounded-lg py-2 px-10 bg-sky-400 hover:bg-sky-600 text-white"
             onClick={() => setOpen(false)}>

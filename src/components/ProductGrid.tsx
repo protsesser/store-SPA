@@ -1,5 +1,5 @@
 import React from 'react';
-import useFetchProducts from '../hooks/useFetchProducts';
+import useFetchProducts from '../services/useFetchProducts';
 import ProductItem from './ProductItem';
 
 const ProductList: React.FC = () => {
