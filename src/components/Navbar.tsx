@@ -1,5 +1,4 @@
 const NavBar: React.FC = () => {
-  //className="fixed top-0 left-96 w-96 h-16 bg-cyan-500 flex flex-row shadow-lg rounded-2xl m-4"
 	return(
     <header className=" h-auto">
       <nav className="flex">
@@ -19,7 +18,6 @@ const NavBar: React.FC = () => {
         </div>
       </nav>
     </header>
-
 	);
 }
 

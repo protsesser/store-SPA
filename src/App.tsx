@@ -1,5 +1,5 @@
 import './App.css'
-import ProductList from './components/ProductList';
+import ProductList from './components/ProductGrid';
 import NavBar from './components/Navbar';
 
 function App() {
