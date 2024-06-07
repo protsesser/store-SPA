@@ -8,12 +8,12 @@ interface ProductItemProps {
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
     return (
-        <div className = " w-full bg-white overflow-y-hidden rounded-2xl ">
+        <div className = " w-full bg-white overflow-y-hidden rounded-2xl shadow-lg">
             <div className="p-4 grid grid-rows-4 justify-center h-full w-full" >
                 <div className=" row-span-3 flex items-center justify-center">
                     <img src={product.image} alt={product.title} className="h-full w-full object-contain "/>
                     </div>
-                <div className="flex text-xl h-full items-center w-full">
+                <div className="flex h-full items-center w-full">
                     <h2 className="flex-1">{product.title}</h2>
                     <p className="text-right min-w-24">${product.price}</p>
                 </div>
