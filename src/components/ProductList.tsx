@@ -12,7 +12,7 @@ const ProductList: React.FC = () => {
         return <p>Error: {error}</p>;
 
     return (
-        <div className=" grid-rows-4 grid-cols-4 gap-x-4 gap-y-16 grid">
+        <div className=" grid-cols-4 gap-x-4 gap-y-12 grid justify-between h-4/5">
             {products.map(product => (
                 <ProductItem key={product.id} product={product} />
             ))}
