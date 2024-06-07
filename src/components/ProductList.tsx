@@ -1,16 +1,9 @@
-// src/components/ProductList.tsx
 import React from 'react';
-import useFetchProducts from '../hooks/useFetchProducts';
+import useFetchProducts from '../hooks/useFetch';
 import ProductItem from './ProductItem';
 
 const ProductList: React.FC = () => {
-    const { products, loading, error } = useFetchProducts();
-
-    if (loading) 
-        return <p>Загрузка контента</p>;
-    if (error) 
-        return <p>Error: {error}</p>;
-
+    const { products} = useFetchProducts();
     return (
         <div className=" grid-cols-4 gap-x-4 gap-y-12 grid justify-between h-4/5 ">
             {products.map(product => (

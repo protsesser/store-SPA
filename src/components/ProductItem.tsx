@@ -1,4 +1,3 @@
-// src/components/ProductItem.tsx
 import React from 'react';
 import { Product } from './Product';
 
@@ -8,7 +7,7 @@ interface ProductItemProps {
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
     return (
-        <div className = " w-full bg-white overflow-y-hidden rounded-2xl shadow-lg">
+        <div className = "w-full bg-white overflow-y-hidden rounded-2xl shadow-lg">
             <div className="p-4 grid grid-rows-4 justify-center h-full w-full" >
                 <div className=" row-span-3 flex items-center justify-center">
                     <img src={product.image} alt={product.title} className="h-full w-full object-contain "/>
@@ -21,8 +20,9 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
         </div>
     );
 };
-/*<p>{product.description}</p>*/
 export default ProductItem;
+
+/*<p>{product.description}</p>*/
 /*
                 <div className = " w-full bg-white overflow-y-hidden rounded-2xl h-2/5">
             <div className="p-4 grid grid-rows-5 justify-center h-full" >
