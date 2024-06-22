@@ -5,7 +5,7 @@ import ProductItem from './ProductItem';
 const ProductList: React.FC = () => {
     const { products} = useFetchProducts();
     return (
-        <div className=" grid-cols-4 gap-x-4 gap-y-12 grid justify-between h-4/5 ">
+        <div className=" grid-cols-4 gap-x-4 gap-y-8 grid justify-between h-4/5 ">
             {products.map(product => (
                 <ProductItem key={product.id} product={product} />
             ))}
@@ -14,3 +14,5 @@ const ProductList: React.FC = () => {
 };
 
 export default ProductList;
+
+
